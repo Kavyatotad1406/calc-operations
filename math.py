@@ -1,11 +1,19 @@
 # calculator.py
-# Program to perform addition and subtraction of two numbers
+# Program to perform addition, subtraction, multiplication, and division of two numbers
 
 def add(a, b):
     return a + b
 
 def subtract(a, b):
     return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Division by zero is not allowed!"
+    return a / b
 
 # Main program
 if __name__ == "__main__":
@@ -14,3 +22,5 @@ if __name__ == "__main__":
 
     print("Addition:", add(num1, num2))
     print("Subtraction:", subtract(num1, num2))
+    print("Multiplication:", multiply(num1, num2))
+    print("Division:", divide(num1, num2))
